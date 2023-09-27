@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let rotate=function (a, n, k)
+{
+    k = k % n;
+  
+    for (let i = 0; i < n; i++) {
+        if (i < k) {
+  
+           
+            console.log(a[n + i - k] + " ");
+        }
+        else {
+  
+            
+            console.log((a[i - k]) + " ");
+        }
+    }
+   
+}
+  let Ar= [1, 2, 3, 4, 5];
+let N = Ar.length;
+let K = 2;
+rotate(Ar, N, K);
+
+// IIFE :
+var Array = [1, 2, 3, 4, 5];
+var M = Array.length;
+var L = 2;
+(function (a, n, k)
+{
+    k = k % n;
+  
+    for (let i = 0; i < n; i++) {
+        if (i < k) {
+  
+           
+            console.log(a[n + i - k] + " ");
+        }
+        else {
+  
+            
+            console.log((a[i - k]) + " ");
+        }
+    }
+   
+})
+(Array, M, L);
+
+    </script>
+</body>
+</html>
